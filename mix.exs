@@ -14,7 +14,7 @@ defmodule Siteholder.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :cowboy, :plug],
+    [applications: [:logger, :cowboy, :plug, :exrm],
     mod: {Siteholder, []}]
   end
 
@@ -30,7 +30,8 @@ defmodule Siteholder.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 1.0.0"},
-      {:plug, "~> 0.12"}
+      {:plug, "~> 0.12"},
+      {:exrm, "~> 1.0"}
     ]
   end
 end
