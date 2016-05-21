@@ -7,14 +7,19 @@ defmodule Siteholder.Router do
 		use Plug.Debugger
 	end
 
-	plug Plug.Static, at: "/public", from: Siteholder
+	plug Plug.Static, at: "/public", from: :siteholder
 
 	plug :match
 	plug :dispatch
 
 	get "/" do
-		IO.puts("root route")
-		conn
-		|>send_resp(200, "done")
+		idx = Path.join("#{:code.priv_dir(:siteholder)}", "static/index.html")
+    send_file(conn, 200, idx)
 	end
+
+	match _ do
+        conn
+        |> send_resp(404, "404'd")
+        |> halt
+    end
 end

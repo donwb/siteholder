@@ -7,10 +7,6 @@ defmodule Siteholder do
     import Supervisor.Spec, warn: false
 
     children = [
-      # Define workers and child supervisors to be supervised
-      # worker(Gma.Worker, [arg1, arg2, arg3]),
-      # tree = [supervisor(PgTest.Repo, [])]
-      
         
       worker(__MODULE__, [], function: :run)
     ]
