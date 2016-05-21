@@ -18,3 +18,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:siteholder]]
         end
 
+docker run -it -v /root/rel:/opt/learning -p 3000:3000 donwb/elixir:0.3 ./bin/siteholder start
+107.170.44.189
+
+
