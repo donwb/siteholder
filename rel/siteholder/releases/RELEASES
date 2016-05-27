@@ -1,4 +1,4 @@
-[{release,"siteholder","0.0.1","7.3",
+[{release,"siteholder","0.0.1","7.2",
           [{getopt,"0.8.2","./lib/getopt-0.8.2"},
            {stdlib,"2.8","./lib/stdlib-2.8"},
            {kernel,"4.2","./lib/kernel-4.2"},

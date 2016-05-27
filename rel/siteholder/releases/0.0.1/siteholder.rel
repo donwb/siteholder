@@ -1,5 +1,5 @@
 {release,{"siteholder","0.0.1"},
-         {erts,"7.3"},
+         {erts,"7.2"},
          [{getopt,"0.8.2"},
           {stdlib,"2.8"},
           {kernel,"4.2"},
