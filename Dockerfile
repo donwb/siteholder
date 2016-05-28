@@ -5,7 +5,6 @@ MAINTAINER Don Browning
 RUN mix local.rebar
 RUN mix local.hex --force
 
-
 ## Install the app ##
 
 # We assume the deps have already been fetched
@@ -20,6 +19,7 @@ ENV MIX_ENV dev
 WORKDIR /opt/siteholder
 
 # Compile and build the release
+RUN mix deps.get
 RUN mix compile
 Run mix release
 
