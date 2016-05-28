@@ -26,7 +26,6 @@ Run mix release
 ## Running environment ##
 
 ENV PORT 3000
-ENV TERM=xterm
 EXPOSE 3000
 
 
