@@ -26,6 +26,7 @@ Run mix release
 ## Running environment ##
 
 ENV PORT 3000
+EXPOSE 3000
 
 # This shouldn't be the way to do it, but it keeps the container running
 CMD ["iex", "-S", "mix"]
