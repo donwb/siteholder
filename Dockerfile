@@ -32,7 +32,8 @@ EXPOSE 3000
 # This shouldn't be the way to do it, but it keeps the container running
 # Unfortunately it *is* getting in the way of `eb` working
 # some kind of erlang race condition w/the console
-CMD ["iex", "-S", "mix"]
+#CMD ["iex", "-S", "mix"]
+CMD ["/bin/bash", "run.sh"]
 
 # Still can't keep container running using exrm 
 # CMD ["/opt/siteholder/rel/siteholder/bin/siteholder", "start"]
