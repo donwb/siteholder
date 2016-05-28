@@ -21,7 +21,7 @@ WORKDIR /opt/siteholder
 # Compile and build the release
 RUN mix deps.get
 RUN mix compile
-Run mix release
+RUN mix release
 
 ## Running environment ##
 
@@ -30,6 +30,8 @@ EXPOSE 3000
 
 
 # This shouldn't be the way to do it, but it keeps the container running
+# Unfortunately it *is* getting in the way of `eb` working
+# some kind of erlang race condition w/the console
 CMD ["iex", "-S", "mix"]
 
 # Still can't keep container running using exrm 
