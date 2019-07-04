@@ -4,4 +4,9 @@
 erl_crash.dump
 *.ez
 config.exs
+rel
 
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
