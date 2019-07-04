@@ -1,0 +1,372 @@
+    1  ls
+    2  pwd
+    3  docker
+    4  apt-get update
+    5  uname -r
+    6  sudo apt-get install apt-transport-https ca-certificates
+    7  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+    8  vi /etc/apt/sources.list.d/docker.list
+    9  apt-get update
+   10  apt-get purge lxc-docker
+   11  apt-cache policy docker-engine
+   12  $ sudo apt-get install linux-image-extra-$(uname -r)
+   13  apt-get install linux-image-extra-$(uname -r)
+   14  apt-get install apparmor
+   15  apt-get install docker
+   16  apt-get remove docker
+   17  apt-get install docker-engine
+   18  sudo service docker start
+   19  docker run hello-world
+   20  docker --version
+   21  ls
+   22  docker pull donwb/elixir:0.3
+   23  pwd
+   24  cd /ops
+   25  cd /opt
+   26  ls
+   27  pwd
+   28  cd 
+   29  cd /
+   30  ls
+   31  cd home/
+   32  ls
+   33  cd /root/
+   34  ls
+   35  git clone https://github.com/donwb/siteholder.git
+   36  ls
+   37  cp siteholder/rel/siteholder/releases/0.0.1/siteholder.tar.gz .
+   38  ls
+   39  mkdir rel
+   40  mv siteholder.tar.gz rel
+   41  cd rel/
+   42  ls
+   43  tar -xf siteholder.tar.gz 
+   44  ls
+   45  cd bin/
+   46  ls
+   47  ./siteholder start
+   48  docker run -it donwb/elixir:0.3 bash
+   49  cd ..
+   50  ls
+   51  docker run -it donwb/elixir:0.3 -v bin:/opt/learning -p 3000:3000 /opt/learning/siteholder start
+   52  docker run -it -v bin:/opt/learning -p 3000:3000 donwb/elixir:0.3 /opt/learning/siteholder start
+   53  docker run -it -v bin:/opt/learning -p 3000:3000 donwb/elixir:0.3 bash
+   54  docker run -it -v bin -p 3000:3000 donwb/elixir:0.3 bash
+   55  docker run -it -v /opt/learning -p 3000:3000 donwb/elixir:0.3 bash
+   56  docker run -it -v /root/bin:/opt/learning -p 3000:3000 donwb/elixir:0.3 bash
+   57  pwd
+   58  docker run -it -v /root/rel/bin:/opt/learning -p 3000:3000 donwb/elixir:0.3 bash
+   59  docker run -it -v /root/rel/bin:/opt/learning -p 3000:3000 donwb/elixir:0.3 ./siteholder start
+   60  ls
+   61  cd ..
+   62  docker run -it -v /root/rel:/opt/learning -p 3000:3000 donwb/elixir:0.3 ./bin/siteholder start
+   63  wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+   64  ls
+   65  apt-get update
+   66  apt-get install esl-erlang
+   67  apt-get install elixir
+   68  ls
+   69  rm erlang-solutions_1.0_all.deb 
+   70  ls
+   71  ls bin/
+   72  cd bin/
+   73  ls
+   74  cd ..
+   75  ls
+   76  rm r bin
+   77  ls
+   78  rm -r bin
+   79  ls
+   80  rm -rf rel
+   81  cd siteholder/
+   82  ls
+   83  rm -rf rel
+   84  mix deps.get
+   85  mix release
+   86  ls
+   87  cp rel/siteholder/releases/0.0.1/siteholder.tar.gz .
+   88  ls
+   89  cd ..
+   90  ls
+   91  mv siteholder/siteholder.tar.gz .
+   92  ls
+   93  tar -xf siteholder
+   94  tar -xf siteholder.tar.gz 
+   95  ls
+   96  rm -rf bin
+   97  rm -rf erts-7.3/
+   98  rm -rf lib/
+   99  ls
+  100  rm -rf releases/
+  101  ls
+  102  mkdir rel
+  103  mv siteholder.tar.gz rel/
+  104  cd rel
+  105  ls
+  106  tar -xf siteholder.tar.gz 
+  107  ls
+  108  cd ..
+  109  ls
+  110  docker run -it -v /root/rel:/opt/learning -p 3000:3000 donwb/elixir:0.3 ./bin/siteholder start
+  111  ls
+  112  docker -ps
+  113  docker ps
+  114  docker run -it -v -d /root/rel:/opt/learning -p 3000:3000 donwb/elixir:0.3 ./bin/siteholder start
+  115  docker run -d  -v /root/rel:/opt/learning -p 3000:3000 donwb/elixir:0.3 ./bin/siteholder start
+  116  docker ps
+  117  docker ps all
+  118  docker ps --all
+  119  ls
+  120  cd rel/
+  121  ls
+  122  cd bin/
+  123  ls
+  124  ./siteholder start
+  125  ls
+  126  cd
+  127  ls
+  128  node
+  129  apt-get install bouncy 
+  130  apt-get install node
+  131  node --version
+  132  node
+  133  apt-get install nodej
+  134  apt-get install nodejs
+  135  ls
+  136  node --version
+  137  node
+  138  apt-get remove node
+  139  apt-get remove nodejs
+  140  apt-get install nodejs
+  141  node
+  142  apt-get autoremove
+  143  node
+  144  apt-get install nodejs
+  145  node -v
+  146  curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+  147  sudo apt-get install -y nodejs
+  148  node
+  149  hash -r
+  150  node
+  151  node -v
+  152  npm install bouncy -g
+  153  ls
+  154  pwd
+  155  vi routes.json
+  156  ls
+  157  vi bouncy-upstart.conf
+  158  ls
+  159  bouncy routes.json 
+  160  bouncy routes.json 80
+  161  mv bouncy-upstart.conf /etc/init/.
+  162  sudo start bouncy-upstart 
+  163  exit
+  164  docker ~v
+  165  top
+  166  docker
+  167  docker ~v
+  168  docker ~~version
+  169  docker
+  170  docker version
+  171  apt~get install htop
+  172  apt-get install htop
+  173  htop
+  174  ls
+  175  exit
+  176  ls
+  177  ls rel/
+  178  mv rel/siteholder.tar.gz siteholder.tar.gz.bak
+  179  mkdir v2
+  180  cd v
+  181  cd v2/
+  182  ls
+  183  mv ../siteholder.tar.gz .
+  184  ls
+  185  tar xf siteholder.tar.gz 
+  186  ls
+  187  cd ../siteholder/rel/
+  188  ls
+  189  cd siteholder/
+  190  ls
+  191  cd bin/
+  192  ls
+  193  ./siteholder stop
+  194  cd
+  195  cd v2/
+  196  ls
+  197  cd bin/
+  198  ls
+  199  ./siteholder start
+  200  ls
+  201  ./siteholder stop
+  202  ls
+  203  ./siteholder start
+  204  ./siteholder stop
+  205  ./siteholder start
+  206  ./siteholder ping
+  207  ./siteholder console
+  208  cd
+  209  ls
+  210  rm -r rel
+  211  rm -f v2
+  212  ls
+  213  rm -r v2/
+  214  ls
+  215  exit
+  216  cd siteholder/rel/siteholder/bin/
+  217  ./siteholder stop
+  218  ./siteholder start
+  219  ./siteholder stop
+  220  ./siteholder start
+  221  ls
+  222  ./siteholder pig
+  223  ./siteholder ping
+  224  ./siteholder remote_console
+  225  ./siteholder pig
+  226  ./siteholder console
+  227  ./siteholder pig
+  228  ./siteholder stop
+  229  ./siteholder console
+  230  pwd
+  231  ./siteholder start
+  232  cd
+  233  cd siteholder/
+  234  ls
+  235  git pull
+  236  git stash
+  237  git pull
+  238  git config --global user.name "don browning"
+  239  git config --global user.email don.browning@gmail.com
+  240  git stash
+  241  git pull
+  242  mix release
+  243  cd rel/siteholder/bin/
+  244  ls
+  245  ./siteholder start
+  246  ls
+  247  cd
+  248  ls
+  249  cd siteholder/
+  250  cd rel/siteholder/bin/
+  251  ls
+  252  ./siteholder stop
+  253  cd
+  254  cd siteholder/
+  255  git pull
+  256  git stash
+  257  git pull
+  258  mix release
+  259  cd rel/siteholder/bin/
+  260  ./siteholder start
+  261  top
+  262  htop
+  263  exit
+  264  ls
+  265  vi routes.json 
+  266  sudo service bouncey restart
+  267  sudo bouncy service restart
+  268  sudo service bouncy restart
+  269  cd /etc/init
+  270  ls
+  271  cat bouncy-upstart.conf 
+  272  restart bouncy-upstart 
+  273  exit
+  274  ls
+  275  mkdir temp
+  276  cd temp
+  277  git clone
+  278  git clone internal-awseb-e-u-AWSEBLoa-45W16F5JSCEZ-1646927436.us-east-1.elb.amazonaws.com
+  279  git clone internal-awseb-e-u-AWSEBLoa-45W16F5JSCEZ-1646927436.us-east-1.el
+  280  git clone 
+  281  git clone https://github.com/donwb/siteholder/siteholder.git
+  282  git clone https://github.com/donwb/siteholder.git
+  283  docker
+  284  docker --version
+  285  ls
+  286  cd siteholder/
+  287  ls
+  288  do
+  289  docker build -t siteholder:0.15 .
+  290  docker login
+  291  docker push donwb/siteholder:0.15
+  292  docker push
+  293  docker imges
+  294  docker iamges
+  295  docker images
+  296  docker rmi siteholder:0.15
+  297  docker build -t donwb/siteholder:0.15
+  298  docker build -t donwb/siteholder:0.15 .
+  299  docker push donwb/siteholder:0.15
+  300  docker push
+  301  docker push donwb/siteholder:0.15
+  302  exit
+  303  ls
+  304  git clone 
+  305  ls
+  306  git clone https://github.com/turnercode/hackathon-demo.git
+  307  cd hackathon-demo/
+  308  ls
+  309  docker build -t donwb/hackathon:0.1 .
+  310  docker images
+  311  docker push donwb/hackathon:0.1
+  312  docker ps
+  313  docker ps --all
+  314  top
+  315  htop
+  316  cd
+  317  cat routes.json 
+  318  exit
+  319  docker images
+  320  docker build -t donwb/hackathon:0.2 .
+  321  ls
+  322  cd hackathon-demo/
+  323  ls
+  324  git pull
+  325  docker build -t donwb/hackathon:0.2 .
+  326  ls
+  327  cat routes.json 
+  328  cd siteholder/
+  329  ls
+  330  ll
+  331  exit
+  332  docker
+  333  docker run -td -p 3000:3000 siteholder
+  334  docker images
+  335  docker run -td -p 3000:3000 donwb/siteholder
+  336  docker run -td -p 3000:3000 donwb/siteholder:0.15
+  337  ls
+  338  cd siteholder/
+  339  ls
+  340  ll
+  341  cd ../hackathon-demo/
+  342  ls
+  343  ll
+  344  pwd
+  345  cd ..
+  346  ls
+  347  pwd
+  348  cd hackathon-demo/
+  349  ls
+  350  git init .
+  351  git add .
+  352  git commit
+  353  git add .
+  354  git commit
+  355  git status
+  356  pwd
+  357  ls
+  358  l s-l
+  359  ll
+  360  rm -r .git
+  361  git init
+  362  git add .
+  363  git status
+  364  git commit
+  365  git remote add https://github.com/donwb/hackathon-demo.git
+  366  git remote add origin https://github.com/donwb/hackathon-demo.git
+  367  git push -u origin master
+  368  cd ..
+  369  ls
+  370  docker images
+  371  history
+  372  history > command-history.txt

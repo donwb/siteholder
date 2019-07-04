@@ -1,0 +1,8 @@
+run_erl [3003] Fri May 27 00:10:09 2016
+Args before exec of shell:
+run_erl [3003] Fri May 27 00:10:09 2016
+argv[0] = sh
+run_erl [3003] Fri May 27 00:10:09 2016
+argv[1] = -c
+run_erl [3003] Fri May 27 00:10:09 2016
+argv[2] = exec "/root/siteholder/rel/siteholder/bin/siteholder" "console"
